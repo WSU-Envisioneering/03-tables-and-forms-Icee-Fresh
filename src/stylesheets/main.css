@@ -1,1 +1,49 @@
 /* Your styles go here */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  caption {
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  thead {
+    background-color: #ccc;
+  }
+  
+  tfoot {
+    background-color: #eee;
+    font-style: italic;
+  }
+  
+  td, th {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  input, select, textarea {
+    margin-bottom: 10px;
+    display: block;
+  }
+  

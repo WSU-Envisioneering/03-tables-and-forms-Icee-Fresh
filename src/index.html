@@ -3,14 +3,129 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Assignment Starter</title>
+  <title>B-17 Bomber: WWII History</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 
 <body>
-  <!--  Your HTML goes here-->
-  <h1>Welcome to WEB 1400!!!!!</h1>
-<script type="module" src="./javascripts/main.js"></script>
+  <h1>B-17 Flying Fortress in World War II</h1>
+
+  <!-- 🌍 Imagemap -->
+  <h2>B-17 Bomber Overview</h2>
+  <img src="images/b17-image.jpg" usemap="#b17map" alt="Diagram of the B-17 Bomber">
+  <map name="b17map">
+    <area shape="rect" coords="50,50,150,150" href="https://en.wikipedia.org/wiki/Boeing_B-17_Flying_Fortress" alt="Wikipedia B-17" target="_blank">
+    <area shape="circle" coords="300,100,40" href="https://www.b17flyingfortress.de/" alt="Fan Page" target="_blank">
+    <area shape="poly" coords="200,200,250,210,240,260,190,250" href="https://www.nationalmuseum.af.mil/" alt="Air Force Museum" target="_blank">
+  </map>
+
+  <!-- 📋 Table -->
+  <h2>B-17 Combat Mission Summary</h2>
+  <table>
+    <caption>B-17 WWII Missions</caption>
+
+    <colgroup>
+      <col style="background-color: #f0f0f0;">
+      <col span="2">
+      <col style="background-color: #fafafa;">
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th>Mission</th>
+        <th>Date</th>
+        <th colspan="2">Details</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td rowspan="2">Berlin Raid</td>
+        <td>March 6, 1944</td>
+        <td>800 B-17s deployed</td>
+        <td>69 lost</td>
+      </tr>
+      <tr>
+        <td>March 9, 1944</td>
+        <td>600 B-17s</td>
+        <td>36 lost</td>
+      </tr>
+      <tr>
+        <td>D-Day Support</td>
+        <td>June 6, 1944</td>
+        <td>1,500 B-17s</td>
+        <td>Minimal losses</td>
+      </tr>
+      <tr>
+        <td>Schweinfurt Raid</td>
+        <td>Oct 14, 1943</td>
+        <td>291 B-17s</td>
+        <td>60 lost</td>
+      </tr>
+      <tr>
+        <td>Regensburg Raid</td>
+        <td>Aug 17, 1943</td>
+        <td colspan="2">Strategic aircraft plant bombed</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Pacific Theater</td>
+        <td>Dec 7, 1941</td>
+        <td>Early B-17s at Pearl Harbor</td>
+        <td>Not armed</td>
+      </tr>
+      <tr>
+        <td>Feb 1942</td>
+        <td>Guam attacks</td>
+        <td>Low success rate</td>
+      </tr>
+      <tr>
+        <td>March 1942</td>
+        <td>Withdrawn to Australia</td>
+        <td>N/A</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="4">Sources: USAAF mission archives</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- 📬 Form -->
+  <h2>Contact Us About the B-17</h2>
+  <form action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <p>Are you a WWII history buff?</p>
+    <label><input type="radio" name="buff" value="yes"> Yes</label>
+    <label><input type="radio" name="buff" value="no"> No</label><br>
+
+    <label for="visit-date">Preferred Visit Date to Museum:</label>
+    <input type="date" id="visit-date" name="visit-date"><br>
+
+    <label for="model">Favorite B-17 Variant:</label>
+    <select id="model" name="model">
+      <option value="b17e">B-17E</option>
+      <option value="b17f">B-17F</option>
+      <option value="b17g">B-17G</option>
+      <option value="yb40">YB-40</option>
+      <option value="early">Early Models</option>
+    </select><br>
+
+    <label for="message">Why do you love the B-17?</label><br>
+    <textarea id="message" name="message" rows="4" cols="40"></textarea><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <script type="module" src="./javascripts/main.js"></script>
 </body>
+
 </html>
